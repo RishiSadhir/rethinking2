@@ -1,0 +1,3 @@
+Statistical Rethinking is one of my all time favorite text books. Now that edition two has come out, I'm looking forward to rediscovering it.
+
+In this repository you'll find jupyter notebooks with many of the examples/concepts from the book reimplemented in python and pystan.
