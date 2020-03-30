@@ -1,3 +1,5 @@
 Statistical Rethinking is one of my all time favorite text books. Now that edition two has come out, I'm looking forward to rediscovering it.
 
 In this repository you'll find jupyter notebooks with many of the examples/concepts from the book reimplemented in python and pystan.
+
+The notebooks will contain reference to a utils package that contains nifty tools for everything from interacting with R, plotting, and summarizing posteriors. I tried to keep these functions as simple and pedagogical as possible to propagate McElreath's spirit. Those all live /utils folder. Each time I reference it in the notebook I drop a link to code snippet as well.
