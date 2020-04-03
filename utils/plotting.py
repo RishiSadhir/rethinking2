@@ -1,5 +1,7 @@
 import requests
 import matplotlib.pyplot as plt
+import scipy.stats as stats
+import numpy as num
 
 
 def set_theme():
@@ -7,3 +9,17 @@ def set_theme():
     resp = requests.get(theme_url)
     for l in resp.iter_lines():
         exec(l)
+
+
+def build_dens(arr, x = None, bw=None, norm=False):
+    positions = arr
+    density = stats.gaussian_kde(positions)
+    if x is None:
+        x = np.linspace(min(positions), max(positions), 1000)
+    if bw:
+        density.set_bandwidth(bw_method=bw)
+    if norm:
+        y = density(x)/density(x).sum(axis=0, keepdims=1)
+    else:
+        y = density(x)
+    return y
