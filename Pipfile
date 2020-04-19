@@ -14,7 +14,8 @@ pymc3 = "*"
 pandas = "*"
 rchitect = "*"
 requests = "*"
-stanmagic = "*"
+jupyterstan = "*"
+graphviz = "*"
 
 [requires]
 python_version = "3.6"

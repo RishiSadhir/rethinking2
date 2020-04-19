@@ -15,7 +15,7 @@ def build_dens(arr, x = None, bw=None, norm=False):
     positions = arr
     density = stats.gaussian_kde(positions)
     if x is None:
-        x = np.linspace(min(positions), max(positions), 1000)
+        x = np.linspace(min(positions), max(positions), len(arr))
     if bw:
         density.set_bandwidth(bw_method=bw)
     if norm:
